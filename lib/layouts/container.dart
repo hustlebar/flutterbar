@@ -69,6 +69,7 @@ class FlutterBarContainer extends StatelessWidget {
           color: Colors.amber,
           shape: BoxShape.circle
         ),
+        margin: EdgeInsets.only(top: 10.0)
       ),
     );
   }
