@@ -40,7 +40,7 @@ class FlutterBarContainer extends StatelessWidget {
         child: Text('Image container'),
         padding: EdgeInsets.all(15.0),
         color: Colors.blue,
-        transform: Matrix4.rotationZ(0.5),
+        transform: Matrix4.skew(0.0, 0.5),
       ),
     );
   }
