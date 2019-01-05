@@ -20,6 +20,7 @@ class FlutterBarRow extends StatelessWidget {
 
   _buildBody() {
     return Row(
+      verticalDirection: VerticalDirection.up,
       children: _buildChildren(),
     );
   }
@@ -38,9 +39,16 @@ class FlutterBarRow extends StatelessWidget {
     return children;
   }
 
-  Container _buildChild(String name) {
-    return Container(
-      child: Image.asset('assets/images/$name')
+  Widget _buildChild(String name) {
+    return Expanded(
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(width: 10.0, color: Colors.black38),
+          borderRadius: const BorderRadius.all(const Radius.circular(8.0)),
+        ),
+        margin: const EdgeInsets.all(4.0),
+        child: Image.asset('assets/images/$name')
+      ),
     );
   }
 }
