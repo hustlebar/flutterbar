@@ -41,6 +41,7 @@ class FlutterBarRow extends StatelessWidget {
 
   Widget _buildChild(String name) {
     return Expanded(
+      flex: (name == "03.jpg" ? 3 : 1),
       child: Container(
         decoration: BoxDecoration(
           border: Border.all(width: 10.0, color: Colors.black38),
