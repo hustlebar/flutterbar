@@ -25,30 +25,24 @@ class FlutterBarColumn extends StatelessWidget {
   }
 
   _buildChildren() {
-    List<String> images = new List();
-    images.add("01.jpg");
-    images.add("02.jpg");
-    images.add("03.jpg");
-    images.add("04.jpg");
-    images.add("05.jpg");
-
     List<Widget> children = new List<Widget>();
-    images.forEach((name) => children.add(_buildChild(name)));
+    children.add(_buildFirst());
 
     return children;
   }
 
-  Widget _buildChild(String name) {
-    return Expanded(
-      flex: (name == "03.jpg" ? 3 : 1),
-      child: Container(
-          decoration: BoxDecoration(
-            border: Border.all(width: 10.0, color: Colors.black38),
-            borderRadius: const BorderRadius.all(const Radius.circular(8.0)),
-          ),
-          margin: const EdgeInsets.all(4.0),
-          child: Image.asset('assets/images/$name')
-      ),
+  Widget _buildFirst() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: <Widget>[
+        Expanded(
+          child: Text('Email')
+        ),
+        Expanded(
+          flex: 2,
+          child: Text('Email field goes here'),
+        )
+      ],
     );
   }
 }
