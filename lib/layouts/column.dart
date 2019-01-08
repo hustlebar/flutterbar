@@ -40,7 +40,7 @@ class FlutterBarColumn extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: Text('Email field goes here'),
+          child: Text('Email field goes here:'),
         )
       ],
     );
