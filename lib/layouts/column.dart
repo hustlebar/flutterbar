@@ -27,6 +27,7 @@ class FlutterBarColumn extends StatelessWidget {
   _buildChildren() {
     List<Widget> children = new List<Widget>();
     children.add(_buildFirst());
+    children.add(_buildSecond());
 
     return children;
   }
@@ -41,6 +42,20 @@ class FlutterBarColumn extends StatelessWidget {
         Expanded(
           flex: 2,
           child: Text('Email field goes here:'),
+        )
+      ],
+    );
+  }
+
+  Widget _buildSecond() {
+    return Row(
+      children: <Widget>[
+        Expanded(
+          child: Text('Password'),
+        ),
+        Expanded(
+          flex: 2,
+          child: Text('Password field goes here'),
         )
       ],
     );
