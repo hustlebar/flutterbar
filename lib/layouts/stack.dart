@@ -20,7 +20,28 @@ class FlutterBarStack extends StatelessWidget {
 
   _buildBody() {
     return Stack(
+      overflow: Overflow.visible,
+      children: <Widget>[
+        _buildBackground(),
+        _buildOverlayText()
+      ],
+    );
+  }
 
+  _buildBackground() {
+    return Container(
+      child: Image.asset('assets/images/03.jpg'),
+    );
+  }
+
+  _buildOverlayText() {
+    return Container(
+      child: Text('Strawberry'),
+      padding: EdgeInsets.all(15.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), bottomRight: Radius.circular(10.0)),
+        color: Colors.blue,
+      ),
     );
   }
 }
