@@ -20,6 +20,7 @@ class FlutterBarColumn extends StatelessWidget {
 
   _buildBody() {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: _buildChildren(),
     );
   }
@@ -34,7 +35,6 @@ class FlutterBarColumn extends StatelessWidget {
 
   Widget _buildFirst() {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Expanded(
           child: Text('Email')
