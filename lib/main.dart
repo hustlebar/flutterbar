@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'layouts/container.dart';
-import 'layouts/row.dart';
-import 'layouts/column.dart';
+import 'layouts/stack.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FlutterBarColumn(title: 'Flutter Bar - Column',),
+      home: FlutterBarStack(title: 'Flutter Bar - Stack',),
     );
   }
 }
