@@ -20,6 +20,7 @@ class FlutterBarStack extends StatelessWidget {
 
   _buildBody() {
     return Stack(
+      alignment: const Alignment(0.0, 0.95),
       overflow: Overflow.visible,
       children: <Widget>[
         _buildBackground(),
@@ -36,11 +37,17 @@ class FlutterBarStack extends StatelessWidget {
 
   _buildOverlayText() {
     return Container(
-      child: Text('Strawberry'),
+      child: Text(
+        'Strawberry',
+        style: TextStyle(
+          color: Colors.white70,
+          fontWeight: FontWeight.bold
+        ),
+      ),
       padding: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), bottomRight: Radius.circular(10.0)),
-        color: Colors.blue,
+        color: Color.fromRGBO(0, 0, 100, 0.50),
       ),
     );
   }
