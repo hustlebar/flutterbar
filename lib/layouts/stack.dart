@@ -48,7 +48,8 @@ class FlutterBarStack extends StatelessWidget {
       padding: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), bottomRight: Radius.circular(10.0)),
-        color: Color.fromRGBO(0, 0, 100, 0.50),
+//        color: Color.fromRGBO(0, 0, 100, 0.50),
+        color: Color.fromARGB(75, 0, 0, 0)
       ),
     );
   }
