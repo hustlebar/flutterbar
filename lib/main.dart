@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'layouts/stack.dart';
+import 'layouts/gridview.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FlutterBarStack(title: 'Flutter Bar - Stack',),
+      home: FlutterBarGridView(title: 'Flutter Bar - GridView',),
     );
   }
 }

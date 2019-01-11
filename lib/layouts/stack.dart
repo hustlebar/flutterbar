@@ -23,6 +23,7 @@ class FlutterBarStack extends StatelessWidget {
 //      alignment: const Alignment(0.0, 0.95),
       alignment: AlignmentDirectional.bottomCenter,
       overflow: Overflow.visible,
+      fit: StackFit.passthrough,
       children: <Widget>[
         _buildBackground(),
         _buildOverlayText()
