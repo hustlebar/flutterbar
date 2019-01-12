@@ -23,18 +23,16 @@ class FlutterBarGridView extends StatelessWidget {
       primary: false,
       crossAxisCount: 2,
       crossAxisSpacing: 10.0,
-
       children: _buildChildren(),
     );
   }
 
-  List<Widget> _buildChildren() {
+  _buildChildren() {
     List<String> images = new List();
     images.add("01.jpg");
     images.add("02.jpg");
     images.add("03.jpg");
     images.add("04.jpg");
-    images.add("05.jpg");
 
     List<Widget> children = new List<Widget>();
     images.forEach((image) => children.add(_buildChild(image)));
@@ -43,15 +41,14 @@ class FlutterBarGridView extends StatelessWidget {
   }
 
   Widget _buildChild(String name) {
-    return Expanded(
-      child: Container(
-          decoration: BoxDecoration(
-            border: Border.all(width: 10.0, color: Colors.black38),
-            borderRadius: const BorderRadius.all(const Radius.circular(8.0)),
-          ),
-          margin: const EdgeInsets.all(4.0),
-          child: Image.asset('assets/images/$name')
-      ),
+    return Container(
+        padding: const EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+          border: Border.all(width: 2.0, color: Colors.orange),
+          borderRadius: const BorderRadius.all(const Radius.circular(8.0)),
+        ),
+//        margin: const EdgeInsets.all(4.0),
+        child: Image.asset('assets/images/$name')
     );
   }
 }
