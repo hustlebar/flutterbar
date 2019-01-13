@@ -23,6 +23,7 @@ class FlutterBarGridView extends StatelessWidget {
       primary: false,
       crossAxisCount: 2,
       crossAxisSpacing: 10.0,
+      padding: EdgeInsets.all(5.0),
       children: _buildChildren(),
     );
   }
