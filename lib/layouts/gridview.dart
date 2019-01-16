@@ -34,6 +34,7 @@ class FlutterBarGridView extends StatelessWidget {
     images.add("02.jpg");
     images.add("03.jpg");
     images.add("04.jpg");
+    images.add("04.jpg");
 
     List<Widget> children = new List<Widget>();
     images.forEach((image) => children.add(_buildChild(image)));
