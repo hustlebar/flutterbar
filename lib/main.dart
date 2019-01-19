@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'layouts/flow.dart';
+import 'layouts/table.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FlutterBarFlow(title: 'Flutter Bar - Flow',),
+      home: FlutterBarTable(title: 'Flutter Bar - Table',),
     );
   }
 }

@@ -21,6 +21,7 @@ class FlutterBarFlow extends StatelessWidget {
 
   _buildBody() {
     return Flow(
+      delegate: null,
       children: _buildChildren(),
     );
   }
