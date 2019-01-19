@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'layouts/gridview.dart';
+import 'layouts/flow.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FlutterBarGridView(title: 'Flutter Bar - GridView',),
+      home: FlutterBarFlow(title: 'Flutter Bar - Flow',),
     );
   }
 }
