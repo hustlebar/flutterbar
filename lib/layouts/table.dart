@@ -20,9 +20,10 @@ class FlutterBarTable extends StatelessWidget {
 
   _buildBody(BuildContext context) {
     return Table(
-      columnWidths: {
-        0: FlexColumnWidth(1.0),
-      },
+      defaultColumnWidth: FlexColumnWidth(0.5),
+//      columnWidths: {
+//        0: FlexColumnWidth(0.5)
+//      },
       border: TableBorder.all(
         color: Color.fromARGB(100, 200, 100, 100)
       ),
@@ -33,6 +34,9 @@ class FlutterBarTable extends StatelessWidget {
   _buildChildren() {
     List<TableRow> children = new List();
     children.add(TableRow(
+      decoration: BoxDecoration(
+
+      ),
       children: [
         Text('Name'),
         Text('Thamizharasu')
