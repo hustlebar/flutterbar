@@ -58,6 +58,15 @@ class FlutterBarTable extends StatelessWidget {
       ]
     ));
 
+    children.add(TableRow(
+      children: [
+        TableCell(
+          child: Text('One')
+        ),
+        TableCell(child: Text('Two'))
+      ]
+    ));
+
     return children;
   }
 }
