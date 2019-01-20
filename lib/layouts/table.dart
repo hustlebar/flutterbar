@@ -20,10 +20,11 @@ class FlutterBarTable extends StatelessWidget {
 
   _buildBody(BuildContext context) {
     return Table(
+      defaultVerticalAlignment: TableCellVerticalAlignment.middle,
       defaultColumnWidth: FlexColumnWidth(0.5),
-//      columnWidths: {
-//        0: FlexColumnWidth(0.5)
-//      },
+      columnWidths: {
+        0: FlexColumnWidth(0.2)
+      },
       border: TableBorder.all(
         color: Color.fromARGB(100, 200, 100, 100)
       ),
