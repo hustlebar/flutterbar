@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'layouts/table.dart';
+import 'layouts/list.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FlutterBarTable(title: 'Flutter Bar - Table',),
+      home: FlutterBarList(title: 'Flutter Bar - Listview',),
     );
   }
 }
