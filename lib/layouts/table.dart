@@ -26,7 +26,8 @@ class FlutterBarTable extends StatelessWidget {
         0: FlexColumnWidth(0.2)
       },
       border: TableBorder.all(
-        color: Color.fromARGB(100, 200, 100, 100)
+        color: Color.fromARGB(100, 200, 100, 100),
+        style: BorderStyle.solid
       ),
       children: _buildChildren(),
     );
