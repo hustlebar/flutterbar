@@ -19,10 +19,33 @@ class FlutterBarList extends StatelessWidget {
   }
 
   _buildBody() {
-    return ListView.builder(
+    int value = 1;
+    if (value == 0) {
+      return _buildDefaultList();
+    }
+
+    return _buildSeparatedList();
+  }
+
+  _buildSeparatedList() {
+    return ListView.separated(
       itemBuilder: (BuildContext context, int index) {
-        return Text('entry $index');
-      }
+        return Text('Hello $index');
+      },
+      separatorBuilder: (BuildContext context, int index) {
+        return Divider(
+          color: Color.fromRGBO(10, 100, 150, 0.50),
+        );
+      },
+      itemCount: 10
+    );
+  }
+
+  _buildDefaultList() {
+    return ListView.builder(
+        itemBuilder: (BuildContext context, int index) {
+          return Text('entry $index');
+        }
     );
   }
 }
