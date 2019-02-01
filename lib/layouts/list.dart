@@ -30,7 +30,7 @@ class FlutterBarList extends StatelessWidget {
   _buildSeparatedList() {
     return ListView.separated(
       itemBuilder: (BuildContext context, int index) {
-        return Text('Hello $index');
+        return Text('Label $index');
       },
       separatorBuilder: (BuildContext context, int index) {
         return Divider(
