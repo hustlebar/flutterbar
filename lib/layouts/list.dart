@@ -34,7 +34,7 @@ class FlutterBarList extends StatelessWidget {
       },
       separatorBuilder: (BuildContext context, int index) {
         return Divider(
-          color: Color.fromRGBO(100, 10, 100, 0.75),
+          color: Color.fromRGBO(150, 10, 100, 0.75),
         );
       },
       itemCount: 10
